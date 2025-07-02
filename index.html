@@ -9,12 +9,59 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="style.css" rel="stylesheet">
     <title>Hello, world!</title>
 </head>
 
 <body>
     <div class="container">
+        <button class="btn btn-primary mt-3 mb-3" id="showAddRecipeForm">Add New Recipe</button>
+
+        <div id="create-recipe" style="display:none">
+            <h1>Create new Recipe</h1>
+            <form id="create-recipe-form">
+                <div>
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-control" />
+                </div>
+                <div>
+                    <label>Description</label>
+                    <textarea name="description" class="form-control"></textarea>
+                </div>
+                <div>
+                    <label>Cooking Time</label>
+                    <input type="number" class="form-control" name="cooking_time" placeholder="Time in minutes" />
+                </div>
+                <div>
+                    <label>Ingredients</label>
+                    <textarea name="ingredients" class="form-control" placeholder="One ingredient per line"></textarea>
+                </div>
+                <div>
+                    <label>Steps</label>
+                    <textarea name="steps" class="form-control"
+                        placeholder="One step per line, no numbering required"></textarea>
+                </div>
+                <div>
+                    <labe>Category:</labe>
+                    <select class="form-control" name="category_id">
+                    </select>
+                </div>
+                <div>
+                    <labe>Cuisine:</label>
+                        <select class="form-control" name="cuisine_id">
+                          
+                        </select>
+                </div>
+                <div>
+                    <labe>Tags:</labe>
+                    <select class="form-control" name="tags[]" multiple>
+                    
+                    </select>
+                </div>
+                <input type="submit" value="Create" class="btn btn-primary mt-3" />
+            </form>
+        </div>
+
         <table class="table">
             <thead>
                 <tr>

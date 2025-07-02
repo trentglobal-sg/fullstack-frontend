@@ -1,0 +1,14 @@
+#create-recipe {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    width: 500px;
+    height: 80vh;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow-y: scroll;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
